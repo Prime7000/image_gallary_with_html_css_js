@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary</title>
+</head>
+<body>
+    <style>
+        #container{
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr);
+            height: 100%;
+            width: 100%;
+            gap: 1rem;
+        }
+        .item{
+            border: 1px solid black;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+
+    <h1 style="background-color: rgba(11, 19, 120, 0.403); text-align: center;">Image Gallary</h1>
+
+    <div id="container">
+        <div class="item">
+            <img src="media\download (11).jpg" width="100%" height="100%" alt="">
+        </div>
+        <div class="item">
+            <img src="media\download (13).jpg" width="100%" height="100%" alt="">
+        </div>
+        <div class="item">
+            <img src="media\images (2).jpg" width="100%" height="100%" alt="">
+        </div>
+        <div class="item">
+            <img src="media\images (3).jpg" width="100%" height="100%" alt="">
+        </div>
+        <div class="item">
+            <img src="media\images (4).jpg" width="100%" height="100%" alt="">
+        </div>
+        <div class="item">
+            <img src="media\images (5).jpg" width="100%" height="100%" alt="">
+        </div>
+    </div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
