@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+</head>
+<body>
+    <h1 style="text-align: center;">prime is a banga</h1>
+
+
+    <p style="text-align: center;">
+        <u>
+            Life: A Journey of Growth and Experience
+        </u>
+        <br>
+
+        Life is a continuous journey filled with experiences, challenges, and growth. It is an intricate balance of joy and sorrow, success and failure, love and loss. From the moment we are born, we embark on a path shaped by our choices, environment, and the people we encounter.  
+
+        At its core, life is about learning. Every challenge we face teaches us resilience, every mistake offers a lesson, and every success encourages us to keep moving forward. It is not always predictable, and that unpredictability is what makes it exciting and meaningful.  
+
+        Life is also about relationships. The connections we form—with family, friends, and even strangers—shape our perspectives and contribute to our happiness. Acts of kindness, love, and understanding make life richer and more fulfilling.  
+
+        Purpose and fulfillment differ for each person. Some find meaning in their careers, others in art, spirituality, or helping others. What truly matters is discovering what brings joy and pursuing it with passion.  
+
+        Above all, life is fleeting. Time moves forward, and nothing remains the same forever. This impermanence reminds us to cherish every moment, embrace change, and live with gratitude. Rather than fearing the unknown, we should approach life with curiosity, hope, and a willingness to grow.  
+
+        Ultimately, life is not about reaching a final destination but about embracing the journey itself.
+    </p>
+
+    <button id="click">Pop</button>
+
+    <style>
+        .pop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+    </style>
+    <div id="pop_page" class="pop">
+        <div style="background-color: white; color: black; width: 300px; height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p>Jesus is Lord</p>
+            <button id="close">close</button>
+        </div>
+    </div>
+
+    <script>
+        const openpop = document.getElementById('click')
+        const pop_page = document.getElementById('pop_page')
+        const close = document.getElementById('close')
+
+
+        openpop.addEventListener('click', () => {
+            pop_page.style.display = "flex"
+            pop_page.children[0].style.color = "red"
+        })
+
+        close.addEventListener('click', () => {
+            pop_page.style.display = "none"
+        })
+    </script>
+</body>
+</html>
